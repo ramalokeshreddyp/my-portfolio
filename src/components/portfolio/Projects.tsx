@@ -162,28 +162,28 @@ const ProjectCard = ({ project }: { project: typeof projects[number] }) => {
                 >
                   {tech}
                 </motion.span>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                <div className="rounded-xl p-4 border border-white/5 bg-[hsl(222,47%,6%)]">
-                  <div className="font-mono text-xs text-primary mb-2">// Current Status</div>
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{project.status}</p>
-                </div>
-                <div className="rounded-xl p-4 border border-white/5 bg-[hsl(222,47%,6%)]">
-                  <div className="font-mono text-xs text-secondary mb-2">// Future Enhancements</div>
-                  <ul className="space-y-2 text-sm sm:text-base text-muted-foreground">
-                    {project.enhancements.map((item, index) => (
-                      <li key={index} className="flex gap-2">
-                        <span className="text-neon-green shrink-0">→</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              </motion.div>
-            ))}
-            <div className="text-neon-green">{"];"}</div>
+              ))}
+            </div>
           </div>
 
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div className="rounded-xl p-4 border border-white/5 bg-[hsl(222,47%,6%)]">
+              <div className="font-mono text-xs text-primary mb-2">// Current Status</div>
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{project.status}</p>
+            </div>
+            <div className="rounded-xl p-4 border border-white/5 bg-[hsl(222,47%,6%)]">
+              <div className="font-mono text-xs text-secondary mb-2">// Future Enhancements</div>
+              <ul className="space-y-2 text-sm sm:text-base text-muted-foreground">
+                {project.enhancements.map((item, index) => (
+                  <li key={index} className="flex gap-2">
+                    <span className="text-neon-green shrink-0">→</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
           {/* Action buttons */}
           <div className="flex flex-wrap gap-3">
             {project.githubUrl && (
