@@ -163,7 +163,7 @@ const Hero = () => {
                   <span className="text-muted-foreground">;</span>
                 </div>
                 <div className="text-sm text-muted-foreground/70">
-                  // Full-stack Developer | Problem Solver | Data-minded Builder
+                  // Full-Stack Engineer | Problem Solver | Data-minded Builder
                 </div>
               </motion.div>
 
@@ -188,7 +188,7 @@ const Hero = () => {
               >
                 <Button asChild size="lg" className="group bg-gradient-to-r from-cyber-cyan via-primary to-cyber-purple hover:opacity-95 transition-all duration-300 text-base sm:text-lg px-8 py-6 glow-cyan hover:scale-105 shadow-[0_0_0_1px_hsl(var(--primary))/0.35]">
                   <a href="https://rlpreddy-growth.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    Explore My Work
+                    Explore My BTech Growth
                     <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </a>
                 </Button>
