@@ -163,7 +163,7 @@ const Hero = () => {
                   <span className="text-muted-foreground">;</span>
                 </div>
                 <div className="text-sm text-muted-foreground/70">
-                  // Full-Stack Engineer | Problem Solver | Data-minded Builder
+                  // Problem Solver | Data-minded Builder
                 </div>
               </motion.div>
 
