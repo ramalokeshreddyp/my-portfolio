@@ -7,79 +7,71 @@ import CodeHeader from "./CodeHeader";
 const projects = [
   {
     title: "Code to Win",
-    subtitle: "Unified Coding Platform Dashboard",
-    description: "A unified dashboard aggregating coding statistics from LeetCode, CodeChef, GeeksforGeeks, and HackerRank for university placement tracking with multi-role analytics.",
-    tech: ["React.js", "Node.js", "Express.js", "MySQL", "React Native", "Vite"],
-    features: [
-      "Aggregated stats from LeetCode, CodeChef, GFG & HackerRank",
-      "Multi-role system (Student, Faculty, HOD, Admin)",
-      "Role-based access, analytics & reporting",
-      "Automated scraping & configurable scoring",
-      "Department-wise performance analytics",
+    subtitle: "Competitive Programming Analytics Platform",
+    challenge: "Coding progress was fragmented across platforms, so there was no clear way to understand consistency, growth, or readiness.",
+    solution: "Built a full-stack analytics product with automated ingestion, role-based access, and reporting that turns raw platform data into useful insight.",
+    status: "Live and used daily by 5,000 active users.",
+    enhancements: [
+      "Add deeper trend analysis and alerts",
+      "Expand recruiter-friendly reports",
+      "Introduce richer goal tracking and benchmarks",
     ],
+    tech: ["React", "Node.js", "Express", "MySQL", "JWT", "Vite"],
     gradient: "from-secondary to-cyber-purple",
     githubUrl: "https://github.com/ramalokeshreddyp/code_to_win",
     liveUrl: "http://codetracker.adityauniversity.in:3000/",
-    commits: 124,
-    branch: "main",
   },
   {
     title: "BoardPulse",
-    subtitle: "Real-Time Collaborative Task Board",
-    description: "A production-ready, fully containerized Kanban board where every card move, presence event, and status update is broadcast instantly to all connected users.",
-    tech: ["Python", "Django", "Channels", "Redis", "PostgreSQL", "Docker"],
-    features: [
-      "Real-time task sync using Redis pub/sub channel layers",
-      "Live presence tracking with join/leave broadcasts",
-      "Secure WebSocket auth with 4001 rejection for unauthenticated users",
-      "One-command full-stack startup with Docker Compose",
-      "Hybrid REST + WebSocket architecture for collaboration workflows",
+    subtitle: "Real-Time Collaborative Workboard",
+    challenge: "Traditional task boards become noisy and slow when multiple people update the same work at once.",
+    solution: "Built a containerized Kanban system with Django Channels, Redis pub/sub, PostgreSQL, and Docker so every update syncs instantly and securely.",
+    status: "Benchmarked at 9.14ms P95 WebSocket latency across 10 concurrent clients.",
+    enhancements: [
+      "Add multi-workspace support and notifications",
+      "Extend collaboration to mobile-friendly views",
+      "Add audit trails and team analytics",
     ],
+    tech: ["Python", "Django", "Channels", "Redis", "PostgreSQL", "Docker"],
     gradient: "from-neon-green to-cyber-cyan",
     githubUrl: "https://github.com/ramalokeshreddyp/BoardPulse",
     liveUrl: null,
-    commits: 89,
-    branch: "main",
   },
   {
     title: "FatePick",
-    subtitle: "Professional Randomization Platform",
-    description: "A high-performance randomization platform to eliminate selection bias in classrooms, workshops, and professional environments with verified shuffle algorithms.",
-    tech: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "jsPDF", "SheetJS"],
-    features: [
-      "Fair & verified shuffle algorithms",
-      "Single selection & balanced team formation",
-      "Topic allocation with bias elimination",
-      "Bulk import (.txt/.csv) support",
-      "PDF & XLSX export with client-side processing",
+    subtitle: "Fair Randomization Tool",
+    challenge: "Manual selection is repetitive, slow, and easy to bias when teams or assignments need to be created quickly.",
+    solution: "Built a client-heavy tool with verified shuffle logic, bulk import, and export flows that keep selection fair and fast.",
+    status: "Deployed on Vercel and ready for everyday classroom or workshop use.",
+    enhancements: [
+      "Add reusable templates for recurring workflows",
+      "Support collaborative selection sessions",
+      "Track selection history and export summaries",
     ],
+    tech: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "jsPDF", "SheetJS"],
     gradient: "from-cyber-purple to-cyber-pink",
     githubUrl: "https://github.com/ramalokeshreddyp/fatepick",
     liveUrl: "https://fatepick.vercel.app/",
-    commits: 56,
-    branch: "main",
   },
   {
     title: "AI Resume Screener",
     subtitle: "Smart Resume Analyzer",
-    description: "An intelligent NLP-based resume analysis system that extracts key skills, identifies gaps, and suggests personalized recommendations.",
-    tech: ["Python", "Flask", "PyPDF2", "NLP", "Jinja2"],
-    features: [
-      "Automated skill extraction from PDFs",
-      "Gap analysis vs job requirements",
-      "Personalized improvement recommendations",
-      "Certification and project suggestions",
-      "Data-driven insights generation",
+    challenge: "Manual resume review is inconsistent and slow when you need a quick signal on fit, missing skills, and improvement areas.",
+    solution: "Built an NLP-based analyzer that extracts skills, identifies gaps, and returns practical recommendations from uploaded resumes.",
+    status: "Working prototype ready for iteration and stronger job-fit scoring.",
+    enhancements: [
+      "Add ATS-style scoring and ranking",
+      "Improve PDF parsing and structured extraction",
+      "Expand recommendations using job descriptions",
     ],
+    tech: ["Python", "Flask", "PyPDF2", "NLP", "Jinja2"],
     gradient: "from-cyber-cyan to-cyber-blue",
     githubUrl: "https://github.com/ramalokeshreddyp/AI-Resume_Screener",
     liveUrl: null,
-    commits: 32,
-    branch: "main",
   },
 ];
 
-const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => {
+const ProjectCard = ({ project }: { project: typeof projects[number] }) => {
   const cardRef = useRef(null);
   const isInView = useInView(cardRef, { 
     once: true, 
@@ -105,7 +97,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
       {/* Terminal-style project card */}
       <div className="rounded-2xl overflow-hidden border border-white/10 bg-[hsl(222,47%,8%)] shadow-2xl hover:shadow-[0_20px_60px_rgba(0,229,255,0.2)] transition-all duration-500">
         {/* Terminal Header */}
-        <div className="flex items-center justify-between px-4 py-3 bg-[hsl(222,47%,11%)] border-b border-white/10">
+          <div className="flex items-center justify-between px-4 py-3 bg-[hsl(222,47%,11%)] border-b border-white/10">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
             <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
@@ -114,11 +106,11 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
           <div className="flex items-center gap-4 font-mono text-xs text-muted-foreground">
             <span className="flex items-center gap-1">
               <GitBranch className="w-3 h-3" />
-              {project.branch}
+                production
             </span>
             <span className="flex items-center gap-1">
               <GitCommit className="w-3 h-3" />
-              {project.commits} commits
+                shipped
             </span>
           </div>
         </div>
@@ -139,9 +131,19 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
             {"*/"}
           </div>
 
-          <p className="text-muted-foreground text-base leading-relaxed mb-6">
-            {project.description}
-          </p>
+          <div className="text-muted-foreground text-base leading-relaxed mb-6">
+            <div className="mb-4">{project.challenge}</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="rounded-xl border border-white/10 bg-[hsl(222,47%,6%)] p-4">
+                <div className="font-mono text-xs text-neon-green mb-2">// Challenge</div>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{project.challenge}</p>
+              </div>
+              <div className="rounded-xl border border-white/10 bg-[hsl(222,47%,6%)] p-4">
+                <div className="font-mono text-xs text-cyber-cyan mb-2">// Solution</div>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{project.solution}</p>
+              </div>
+            </div>
+          </div>
 
           {/* Tech Stack as imports */}
           <div className="font-mono text-xs sm:text-sm mb-6 space-y-1">
@@ -160,28 +162,23 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
                 >
                   {tech}
                 </motion.span>
-              ))}
-            </div>
-          </div>
-
-          {/* Features as code block */}
-          <div className="bg-[hsl(222,47%,6%)] rounded-xl p-4 font-mono text-xs sm:text-sm mb-6 border border-white/5">
-            <div className="text-neon-green mb-2">{"const features = ["}</div>
-            {project.features.map((feature, i) => (
-              <motion.div 
-                key={i}
-                initial={{ opacity: 0, x: -10 }}
-                animate={isInView ? { 
-                  opacity: 1, 
-                  x: 0,
-                  transition: { delay: 0.3 + (i * 0.05), duration: 0.3 }
-                } : {}}
-                className="text-muted-foreground pl-4"
-              >
-                <span className="text-cyber-cyan">"</span>
-                {feature}
-                <span className="text-cyber-cyan">"</span>
-                {i < project.features.length - 1 && ","}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div className="rounded-xl p-4 border border-white/5 bg-[hsl(222,47%,6%)]">
+                  <div className="font-mono text-xs text-primary mb-2">// Current Status</div>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{project.status}</p>
+                </div>
+                <div className="rounded-xl p-4 border border-white/5 bg-[hsl(222,47%,6%)]">
+                  <div className="font-mono text-xs text-secondary mb-2">// Future Enhancements</div>
+                  <ul className="space-y-2 text-sm sm:text-base text-muted-foreground">
+                    {project.enhancements.map((item, index) => (
+                      <li key={index} className="flex gap-2">
+                        <span className="text-neon-green shrink-0">→</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
               </motion.div>
             ))}
             <div className="text-neon-green">{"];"}</div>
@@ -246,8 +243,8 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="space-y-12 max-w-5xl mx-auto">
-          {projects.map((project, index) => (
-            <ProjectCard key={project.title} project={project} index={index} />
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
           ))}
         </div>
       </div>

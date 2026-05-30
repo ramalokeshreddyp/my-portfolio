@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, ExternalLink, Heart, Code2 } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Footer = () => {
   const codingPlatforms = [
@@ -28,10 +29,21 @@ const Footer = () => {
             <h3 className="text-xl sm:text-2xl font-bold gradient-text mb-3">Lokesh Reddy</h3>
             <p className="text-foreground/70 dark:text-muted-foreground text-sm sm:text-base leading-relaxed">
               <span className="text-cyber-purple">{"<"}</span>
-              Core Developer
+              Full-stack Developer
               <span className="text-cyber-purple">{" />"}</span> passionate about 
-              problem-solving & building impactful solutions.
+              product thinking, clean systems, and shipping useful software.
             </p>
+            <div className="mt-5 flex items-center gap-4 rounded-2xl border border-border/60 dark:border-white/10 bg-background/80 dark:bg-[hsl(222,47%,8%)] p-3 max-w-sm">
+              <img
+                src={profilePhoto}
+                alt="Rama Lokesh Reddy"
+                className="w-14 h-14 rounded-xl object-cover border border-primary/20"
+              />
+              <div>
+                <div className="font-mono text-xs text-foreground/60 dark:text-muted-foreground/60 mb-1">{"// featured_profile"}</div>
+                <div className="text-sm font-semibold text-foreground">Placed at the end, not the headline.</div>
+              </div>
+            </div>
           </div>
 
           {/* Coding Platforms */}

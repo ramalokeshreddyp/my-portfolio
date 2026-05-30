@@ -9,8 +9,8 @@ export const PERSONAL_INFO = {
   email: "rlpreddy565@gmail.com",
   phone: "+91 6305958669",
   location: "India",
-  role: "Core Developer",
-  tagline: "Competitive Programmer | Software Developer | Future Data Scientist",
+  role: "Full-Stack Engineer",
+  tagline: "Full-Stack Engineer | Core Developer | Data-minded Builder",
 } as const;
 
 export const SOCIAL_LINKS = {

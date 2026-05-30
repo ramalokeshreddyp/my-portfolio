@@ -9,11 +9,11 @@ interface TerminalLine {
 }
 
 const terminalSequence: TerminalLine[] = [
-  { type: "comment", content: "// Let's learn about this developer..." },
+  { type: "comment", content: "// Let's learn about this engineer..." },
   { type: "command", content: "whoami" },
   { type: "output", content: "Rama Lokesh Reddy Penumallu" },
   { type: "command", content: "cat role.txt" },
-  { type: "output", content: "3rd Year CSE Student | Core Developer | Problem Solver" },
+  { type: "output", content: "Full-stack Developer | Core Developer | Problem Solver" },
   { type: "command", content: "cat skills.json" },
   { type: "json", content: JSON.stringify({
     role: "Core Developer",
@@ -22,9 +22,9 @@ const terminalSequence: TerminalLine[] = [
     status: "Ready to build 🚀"
   }, null, 2) },
   { type: "command", content: "git log --oneline -3" },
-  { type: "output", content: "a1b2c3d feat: added competitive programming skills\n8e9f0a1 fix: improved problem-solving speed by 200%\n2c3d4e5 init: started journey as a developer" },
+  { type: "output", content: "a1b2c3d feat: added competitive programming skills\n8e9f0a1 fix: improved problem-solving speed by 200%\n2c3d4e5 init: started building software" },
   { type: "command", content: "./check_availability.sh" },
-  { type: "success", content: "✓ Open to internships and collaborations!" },
+  { type: "success", content: "✓ Open to product, platform, and data-focused roles!" },
   { type: "comment", content: "// Scroll down to explore more..." },
 ];
 

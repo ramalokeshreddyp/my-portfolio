@@ -30,13 +30,13 @@ const internships = [
     commitHash: "b9e4c1d",
   },
   {
-    role: "Class Representative",
+    role: "Academic Liaison",
     company: "Aditya University",
     duration: "August 2023 – Present",
     description: [
-      "Facilitated effective communication between students and faculty, addressing academic queries",
+      "Facilitated communication between peers and faculty on academic coordination",
       "Coordinated with department heads to resolve class-level issues promptly",
-      "Organized group discussions and academic activities to enhance student engagement",
+      "Organized discussions and academic activities to improve engagement",
     ],
     color: "from-neon-green to-cyber-cyan",
     commitHash: "c5d8f3a",

@@ -10,14 +10,14 @@ export const portfolioKnowledgeBase = {
   personal: {
     name: "Rama Lokesh Reddy Penumallu",
     shortName: "Lokesh Reddy",
-    role: "Core Developer",
-    title: "3rd Year CSE Student | Core Developer | Competitive Programmer",
-    tagline: "Competitive Programmer | Software Developer | Future Data Scientist",
-    education: "3rd Year Computer Science Engineering Student at Aditya University",
+    role: "Full-Stack Engineer",
+    title: "Full-Stack Engineer | Core Developer | Competitive Programmer",
+    tagline: "Full-Stack Engineer | Core Developer | Data-minded Builder",
+    education: "Computer Science Engineering at Aditya University",
     location: "India",
     email: "rlpreddy565@gmail.com",
     phone: "+91 6305958669",
-    about: "Passionate 3rd-year CSE student who loves solving problems, building software, and learning new technologies. Strong in C++, DSA, competitive programming, and full-stack development.",
+    about: "Full-stack engineer who builds reliable software with clean architecture, practical problem solving, and systems that stay fast, secure, and maintainable. Strong in C++, DSA, competitive programming, backend development, and product-minded execution.",
   },
 
   skills: {
@@ -76,14 +76,14 @@ export const portfolioKnowledgeBase = {
     {
       name: "Code to Win",
       type: "Full-Stack Web Application",
-      description: "Unified dashboard aggregating coding statistics from LeetCode, CodeChef, GeeksforGeeks, and HackerRank for university placement tracking with multi-role analytics.",
+      description: "Full-stack competitive programming analytics platform that consolidates performance data from LeetCode, CodeChef, GeeksforGeeks, and HackerRank into one actionable dashboard.",
       technologies: ["React.js", "Node.js", "Express.js", "MySQL", "React Native", "Vite"],
       features: [
-        "Aggregated statistics from multiple coding platforms",
-        "Multi-role system (Student, Faculty, HOD, Admin)",
+        "Automated data ingestion from multiple coding platforms",
         "Role-based access control and analytics",
-        "Automated web scraping",
-        "Department-wise performance tracking",
+        "Live performance summaries and reporting",
+        "Reliable scraping and scheduling pipeline",
+        "Usage proven with 5,000 active users",
       ],
       github: "https://github.com/ramalokeshreddyp/code_to_win",
       live: "http://codetracker.adityauniversity.in:3000/",
@@ -92,7 +92,7 @@ export const portfolioKnowledgeBase = {
     {
       name: "BoardPulse",
       type: "Real-Time Collaboration Platform",
-      description: "Production-ready, fully containerized Kanban board where every card move, presence event, and status update is broadcast instantly to all connected users.",
+      description: "Production-ready, fully containerized real-time Kanban board where every card move, presence event, and status update is broadcast instantly to connected users.",
       technologies: ["Python", "Django", "Channels", "Redis", "PostgreSQL", "Docker"],
       features: [
         "Real-time task sync using Redis pub/sub channel layers",
@@ -107,7 +107,7 @@ export const portfolioKnowledgeBase = {
     {
       name: "FatePick",
       type: "Web Application",
-      description: "High-performance randomization platform to eliminate selection bias in classrooms, workshops, and professional environments with verified shuffle algorithms.",
+      description: "Fast randomization platform that uses verified shuffle algorithms to keep selection fair in classrooms, workshops, and team settings.",
       technologies: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "jsPDF", "SheetJS"],
       features: [
         "Fair and verified shuffle algorithms",
@@ -123,7 +123,7 @@ export const portfolioKnowledgeBase = {
     {
       name: "AI Resume Screener",
       type: "Machine Learning / NLP Application",
-      description: "Intelligent NLP-based resume analysis system that extracts key skills, identifies gaps, and suggests personalized recommendations.",
+      description: "NLP-based resume analysis system that extracts key skills, identifies gaps, and suggests personalized recommendations.",
       technologies: ["Python", "Flask", "PyPDF2", "NLP", "Jinja2"],
       features: [
         "Automated skill extraction from PDFs",
@@ -144,9 +144,9 @@ export const portfolioKnowledgeBase = {
       duration: "May 2025 – July 2025",
       type: "Technical Internship",
       responsibilities: [
-        "Built responsive full-stack applications using MongoDB, Express.js, React.js, and Node.js",
+        "Built responsive full-stack features using MongoDB, Express.js, React.js, and Node.js",
         "Developed REST APIs and collaborated through Git/GitHub",
-        "Worked on deployment and testing in development environment",
+        "Worked on deployment and testing in a development environment",
       ],
     },
     {
@@ -161,14 +161,14 @@ export const portfolioKnowledgeBase = {
       ],
     },
     {
-      role: "Class Representative",
+      role: "Academic Liaison",
       company: "Aditya University",
       duration: "August 2023 – Present",
       type: "Leadership Role",
       responsibilities: [
-        "Facilitated effective communication between students and faculty",
+        "Facilitated communication between peers and faculty",
         "Coordinated with department heads to resolve class-level issues",
-        "Organized group discussions and academic activities",
+        "Organized discussions and academic activities to improve engagement",
       ],
     },
   ],

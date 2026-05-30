@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Github, Linkedin, Mail, ChevronDown, Menu, X } from "lucide-react";
-import profilePhoto from "@/assets/profile-photo.jpg";
 import { useState } from "react";
 
 const Hero = () => {
@@ -125,18 +124,17 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="max-w-6xl mx-auto"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
-            {/* Text Content */}
-            <div className="text-center lg:text-left order-2 lg:order-1">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="space-y-8">
               {/* Code-style Greeting */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                className="inline-block mb-6 sm:mb-8"
+                className="inline-block"
               >
                 <span className="font-mono text-primary text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-2.5 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm">
-                  <span className="text-muted-foreground">{">"}</span> console.log(<span className="text-neon-green">"Hello, World!"</span>)
+                  <span className="text-muted-foreground">{">"}</span> console.log(<span className="text-neon-green">"Building reliable products."</span>)
                 </span>
               </motion.div>
 
@@ -145,7 +143,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold"
               >
                 <span className="gradient-text">Rama Lokesh Reddy</span>
               </motion.h1>
@@ -155,9 +153,9 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="font-mono text-base sm:text-lg md:text-xl text-muted-foreground mb-6 space-y-1"
+                className="font-mono text-base sm:text-lg md:text-xl text-muted-foreground space-y-1"
               >
-                <div className="flex items-center justify-center lg:justify-start gap-2 flex-wrap">
+                <div className="flex items-center justify-center gap-2 flex-wrap">
                   <span className="text-cyber-purple">const</span>
                   <span className="text-foreground">role</span>
                   <span className="text-muted-foreground">=</span>
@@ -165,7 +163,7 @@ const Hero = () => {
                   <span className="text-muted-foreground">;</span>
                 </div>
                 <div className="text-sm text-muted-foreground/70">
-                  // Competitive Programmer | Software Developer | Future Data Scientist
+                  // Full-stack Developer | Problem Solver | Data-minded Builder
                 </div>
               </motion.div>
 
@@ -174,10 +172,11 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
-                className="text-base sm:text-lg text-muted-foreground mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+                className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto"
               >
-                I'm a passionate 3rd-year CSE student who loves solving problems, building software, and learning new technologies. 
-                Strong in <span className="text-primary font-medium">C++, DSA, competitive programming</span>, and full-stack development.
+                I build reliable software across the stack, with a focus on clean architecture,
+                practical problem solving, and systems that stay fast, secure, and easy to extend.
+                I care about shipping work that feels polished to users and maintainable to teams.
               </motion.p>
 
               {/* CTA Buttons */}
@@ -185,11 +184,11 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
-                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12"
+                className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
               >
                 <Button asChild size="lg" className="group bg-gradient-to-r from-cyber-cyan via-primary to-cyber-purple hover:opacity-95 transition-all duration-300 text-base sm:text-lg px-8 py-6 glow-cyan hover:scale-105 shadow-[0_0_0_1px_hsl(var(--primary))/0.35]">
                   <a href="https://rlpreddy-growth.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    Explore My BTech Journey
+                    Explore My Work
                     <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </a>
                 </Button>
@@ -215,7 +214,7 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.5 }}
-                className="flex items-center justify-center lg:justify-start gap-4"
+                className="flex items-center justify-center gap-4"
               >
                 {[
                   { icon: Github, href: "https://github.com/ramalokeshreddyp", label: "GitHub" },
@@ -236,24 +235,24 @@ const Hero = () => {
                   </motion.a>
                 ))}
               </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.75, duration: 0.5 }}
+                className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto"
+              >
+                {[
+                  { label: "Focus", value: "Full-stack systems" },
+                  { label: "Strength", value: "Clear execution" },
+                  { label: "Style", value: "Fast, secure, scalable" },
+                ].map((item) => (
+                  <div key={item.label} className="glass-card rounded-2xl px-5 py-4 border border-white/10">
+                    <div className="font-mono text-xs text-muted-foreground mb-1">{item.label}</div>
+                    <div className="text-sm sm:text-base font-semibold text-foreground">{item.value}</div>
+                  </div>
+                ))}
+              </motion.div>
             </div>
-
-            {/* Profile Image */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="flex justify-center lg:justify-end order-1 lg:order-2"
-            >
-              <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 animate-pulse" />
-                <img
-                  src={profilePhoto}
-                  alt="Rama Lokesh Reddy"
-                  className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-3xl border-4 border-primary/30 shadow-2xl group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            </motion.div>
           </div>
         </motion.div>
       </div>
