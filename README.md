@@ -1,4 +1,4 @@
-# PRLR Portfolio
+# Rama Lokesh Reddy | Full-Stack Engineer Portfolio
 
 <div align="center">
 
@@ -14,7 +14,7 @@ Professional dark-mode portfolio platform with animated sections, project showca
 </div>
 
 ## Project Overview
-This project is a modern, production-ready personal portfolio for **Rama Lokesh Reddy Penumallu**. It presents technical profile data through a polished UI and a structured content system.
+This project is a modern, production-ready portfolio for **Rama Lokesh Reddy Penumallu**, built to position him as a full-stack engineer who ships reliable products with Django, React, PostgreSQL, Redis, and Docker.
 
 Core goals:
 - Present projects, internships, achievements, certifications, and contact details in one place.

@@ -216,7 +216,7 @@ class PortfolioChatbot {
     // Education
     if (this.matchesPattern(question, ['education', 'university', 'college', 'degree', 'student'])) {
       return {
-        answer: `I'm currently a ${this.knowledgeBase.personal.education}. I'm passionate about computer science and actively applying my knowledge through projects and competitive programming!`,
+        answer: `My background includes ${this.knowledgeBase.personal.education}. I focus on applying computer science through projects, product building, and competitive programming!`,
         confidence: 1.0,
       };
     }

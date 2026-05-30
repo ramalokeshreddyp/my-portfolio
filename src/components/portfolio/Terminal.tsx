@@ -13,10 +13,10 @@ const terminalSequence: TerminalLine[] = [
   { type: "command", content: "whoami" },
   { type: "output", content: "Rama Lokesh Reddy Penumallu" },
   { type: "command", content: "cat role.txt" },
-  { type: "output", content: "Full-stack Developer | Core Developer | Problem Solver" },
+  { type: "output", content: "Full-stack Engineer | Problem Solver | Data-minded Builder" },
   { type: "command", content: "cat skills.json" },
   { type: "json", content: JSON.stringify({
-    role: "Core Developer",
+    role: "Full-Stack Engineer",
     languages: ["C++", "Java", "Python", "JavaScript"],
     focus: ["DSA", "Algorithms", "System Design"],
     status: "Ready to build 🚀"

@@ -46,7 +46,7 @@ const SkillsCode = () => {
     
     lines.push({ content: "const developer = {", indent: 0, type: "keyword" });
     lines.push({ content: 'name: "Rama Lokesh Reddy",', indent: 1, type: "property" });
-    lines.push({ content: 'title: "Core Developer",', indent: 1, type: "property" });
+    lines.push({ content: 'title: "Full-Stack Engineer",', indent: 1, type: "property" });
     lines.push({ content: "", indent: 0, type: "empty" });
     lines.push({ content: "skills: {", indent: 1, type: "keyword" });
     

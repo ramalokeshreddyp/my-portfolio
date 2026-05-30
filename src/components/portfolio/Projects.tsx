@@ -7,16 +7,16 @@ import CodeHeader from "./CodeHeader";
 const projects = [
   {
     title: "Code to Win",
-    subtitle: "Competitive Programming Analytics Platform",
+    subtitle: "Flagship Competitive Programming Analytics Platform",
     challenge: "Coding progress was fragmented across platforms, so there was no clear way to understand consistency, growth, or readiness.",
-    solution: "Built a full-stack analytics product with automated ingestion, role-based access, and reporting that turns raw platform data into useful insight.",
-    status: "Live and used daily by 5,000 active users.",
+    solution: "Built a full-stack analytics product with automated ingestion, role-based access, and reporting that turns raw platform data into useful insight for users and recruiters alike.",
+    status: "Live and used daily by 5,000 active users, with a clear path to scale through queued ingestion, caching, batching, and rate limiting.",
     enhancements: [
-      "Add deeper trend analysis and alerts",
-      "Expand recruiter-friendly reports",
-      "Introduce richer goal tracking and benchmarks",
+      "Move scraping to queues and batch writes for higher load",
+      "Add caching and read-heavy analytics separation",
+      "Expand recruiter reports and trend-based alerts",
     ],
-    tech: ["React", "Node.js", "Express", "MySQL", "JWT", "Vite"],
+    tech: ["React", "Node.js", "Express", "MySQL", "JWT", "Cron Jobs"],
     gradient: "from-secondary to-cyber-purple",
     githubUrl: "https://github.com/ramalokeshreddyp/code_to_win",
     liveUrl: "http://codetracker.adityauniversity.in:3000/",
@@ -95,7 +95,7 @@ const ProjectCard = ({ project }: { project: typeof projects[number] }) => {
       className="relative group"
     >
       {/* Terminal-style project card */}
-      <div className="rounded-2xl overflow-hidden border border-white/10 bg-[hsl(222,47%,8%)] shadow-2xl hover:shadow-[0_20px_60px_rgba(0,229,255,0.2)] transition-all duration-500">
+      <div className={`rounded-2xl overflow-hidden border border-white/10 bg-[hsl(222,47%,8%)] shadow-2xl hover:shadow-[0_20px_60px_rgba(0,229,255,0.2)] transition-all duration-500 ${project.title === "Code to Win" ? "ring-1 ring-primary/30" : ""}`}>
         {/* Terminal Header */}
           <div className="flex items-center justify-between px-4 py-3 bg-[hsl(222,47%,11%)] border-b border-white/10">
           <div className="flex items-center gap-2">
@@ -106,7 +106,7 @@ const ProjectCard = ({ project }: { project: typeof projects[number] }) => {
           <div className="flex items-center gap-4 font-mono text-xs text-muted-foreground">
             <span className="flex items-center gap-1">
               <GitBranch className="w-3 h-3" />
-                production
+                live
             </span>
             <span className="flex items-center gap-1">
               <GitCommit className="w-3 h-3" />
@@ -130,6 +130,13 @@ const ProjectCard = ({ project }: { project: typeof projects[number] }) => {
           <div className="font-mono text-xs text-muted-foreground/60 mb-4">
             {"*/"}
           </div>
+
+          {project.title === "Code to Win" && (
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-mono text-primary">
+              <span className="h-2 w-2 rounded-full bg-primary" />
+              Flagship project for recruiter review
+            </div>
+          )}
 
           <div className="text-muted-foreground text-base leading-relaxed mb-6">
             <div className="mb-4">{project.challenge}</div>
@@ -184,6 +191,17 @@ const ProjectCard = ({ project }: { project: typeof projects[number] }) => {
               </ul>
             </div>
           </div>
+
+          {project.title === "Code to Win" && (
+            <div className="rounded-xl border border-primary/20 bg-primary/5 p-4 mb-6">
+              <div className="font-mono text-xs text-primary mb-2">// Why It Matters</div>
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                This is the project that best shows product thinking, data pipelines, authentication, and operational scale.
+                It already has a live user base, and the next growth phase is straightforward: cache analytics, queue ingestion,
+                batch writes, and keep the experience fast as traffic grows.
+              </p>
+            </div>
+          )}
           {/* Action buttons */}
           <div className="flex flex-wrap gap-3">
             {project.githubUrl && (

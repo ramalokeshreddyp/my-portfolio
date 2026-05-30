@@ -159,7 +159,7 @@ const Hero = () => {
                   <span className="text-cyber-purple">const</span>
                   <span className="text-foreground">role</span>
                   <span className="text-muted-foreground">=</span>
-                  <span className="text-neon-green">"Core Developer"</span>
+                  <span className="text-neon-green">"Full-Stack Engineer"</span>
                   <span className="text-muted-foreground">;</span>
                 </div>
                 <div className="text-sm text-muted-foreground/70">

@@ -10,7 +10,7 @@ export const PERSONAL_INFO = {
   phone: "+91 6305958669",
   location: "India",
   role: "Full-Stack Engineer",
-  tagline: "Full-Stack Engineer | Core Developer | Data-minded Builder",
+  tagline: "Full-Stack Engineer | Data-minded Builder | Problem Solver",
 } as const;
 
 export const SOCIAL_LINKS = {
